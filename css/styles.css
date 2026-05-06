@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: #00539a;
+     --color-green:  #008762;
+     --color-gold:  #FFD66B;
+     --color-white: #FFFFFF;
+     --color-dark: #1a2b45;
+     --color-ltblue: #93a4cf;
+     --color-ltgreen: #92c3b2;
+
+     /* Topography */
+     --font-main: 'EB Garamond', Garamond, serif;
+     --font-bold: 'Oswald', Arial, sans-serif;
+
+     /* Spacing Scale */
+     --spacing-sm: 0.75rem;
+     --spacing-md: 1.5rem;
+     --spacing-lg: 3rem;
+
+     /* Borders */
+    --radius: 8px;
+    --border-gold: 2px solid var;
+}
+
+body {
+    font-family: 'EB Garamond', Garamond, serif;
+    color: #1a2b45;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-blue)
+}
+
+#hero {
+    background-image: url(../images/aaa1.png);
+    background-size: cover;
+    background-position: center;
+    font-family: var(--font-bold);
+    align-items: center;
+    z-index: 0;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 51, 102, 0.65);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    padding-top: 15rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: .80rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-white);
+    text-decoration: none;
+    z-index: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.5s;
+}
+
+.nav-links a:hover {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+}
+
