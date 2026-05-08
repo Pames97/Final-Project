@@ -31,11 +31,11 @@ body {
     font-family: 'EB Garamond', Garamond, serif;
     color: #1a2b45;
     line-height: 1.6;
-    background-color: var(--color-ltblue)
+    background-color: var(--color-blue)
 }
 
 header {
-    background-color: var(--color-blue)
+    background-color: var(--color-dark);
 }
 
 #hero {
@@ -85,6 +85,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    position: sticky;
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Oswald', Arial, sans-serif;
@@ -125,6 +126,7 @@ header {
 
 #cards-section {
     padding: 4rem 0;
+    text-align: center;
 }
 
 .cards-grid {
@@ -160,4 +162,12 @@ header {
     color: #000000;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+}
+
+#ciatriad {
+    text-align: center;
+    border: 5px solid var(--color-white);
+    background-color: var(--color-white);
+    margin-left: 150px;
+    margin-right: 150px;
 }
