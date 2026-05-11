@@ -36,6 +36,10 @@ body {
 
 header {
     background-color: var(--color-dark);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 #hero {
@@ -85,7 +89,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    position: sticky;
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Oswald', Arial, sans-serif;
@@ -130,9 +133,9 @@ header {
 }
 
 .cards-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr;
-    gap: 10rem;
+    gap: 4rem;
 }
 
 .card {
@@ -166,6 +169,38 @@ header {
 
 #ciatriad {
     text-align: center;
+    border: 5px solid var(--color-white);
+    background-color: var(--color-white);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#data {
+    text-align: center;
+    border: 5px solid var(--color-white);
+    background-color: var(--color-white);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#auth {
+    text-align: center;
+    border: 5px solid var(--color-white);
+    background-color: var(--color-white);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#cards-section {
+    text-align: center;
+    border: 5px solid var(--color-white);
+    background-color: var(--color-white);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.footer-text {
+     text-align: center;
     border: 5px solid var(--color-white);
     background-color: var(--color-white);
     margin-left: 150px;
