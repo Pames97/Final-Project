@@ -151,8 +151,155 @@
             </div>
         </section>
 
-        <p class="footer-text"><strong>Something you know</strong> (password or PIN) <strong>Something you have</strong> (smart card, hardware token, code sent to
-your phone) <strong>Something you are</strong> (fingerprint, retina scan, voice)</p>
+        <p class="footer-text"><strong>Something you know</strong> (password or PIN) <strong>Something you have</strong> (smart card, hardware token, code sent to your phone) <strong>Something you are</strong> (fingerprint, retina scan, voice)</p>
+
+        <section id="passwords">
+            <h5>Password Security</h5>
+            <h2>Password Attacks & How to Defend Against Them</h2>
+            <p>Passwords are the most common - and most commonly attacked - form of authentication. Understanding the attack types is the first step to building a solid defense.</p>
+        </section>
+        
+        <section id="cards-section">
+            <div class="container">
+                <div class="cards-grid">
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Brute Force</h3>
+                            <p>Method &#x23; 1</p>
+                            <p>Software that automatically tests every possible character combination until the correct password is found. Thorough but slow for complex passwords.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Dictionary Attack</h3>
+                            <p>Method &#x23; 2</p>
+                            <p>Uses a large database of common words, names, and character substitution (like p@ssw0rd) to rapidly guess passwrods. Much faster than pure brute force.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Password Spraying</h3>
+                            <p>Method &#x23; 3</p>
+                            <p>Tests one weak password against many accounts. Avoids account lockouts because each account lockouts because each account only recieves one incorrect attempt</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Credential Stuffing</h3>
+                            <p>Method &#x23; 4</p>
+                            <p>Uses stolen username/password pairs from a known breach to attack other sites. Effective because 52% of people reuse passwords across accounts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="footer-text"><strong>Something you know</strong> (password or PIN) <strong>Something you have</strong> (smart card, hardware token, code sent to your phone) <strong>Something you are</strong> (fingerprint, retina scan, voice)</p>
+
+        <section id="table">
+            <h2>How Long to Brute Force Your Password?</h2>
+            <p>Estimated crack time based on password length and character types used. Red = cracked iinstantly Green = extremely safe</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Estimated Brute Force Crack Time by Password Length & Character Set</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>&#x23; Chars</th>
+                        <th>Numbers Only</th>
+                        <th>Lowercase Only</th>
+                        <th>Upper &amp; Lower</th>
+                        <th>Numbers + Mixed Case</th>
+                        <th>Numbers + Mixed + Symbols</th>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Instantly</td>
+                        <td>Instantly</td>
+                        <td>Instantly</td>
+                        <td>Instantly</td>
+                        <td>Instantly</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Instantly</td>
+                        <td>Instantly</td>
+                        <td>Instantly</td>
+                        <td>1 sec</td>
+                        <td>5 sec</td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>Instantly</td>
+                        <td>Instantly</td>
+                        <td>25 sec</td>
+                        <td>1 min</td>
+                        <td>6 min</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>Instantly</td>
+                        <td>5 sec</td>
+                        <td>22 min</td>
+                        <td>1 hour</td>
+                        <td>8 hours</td>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td>Instantly</td>
+                        <td>2 min</td>
+                        <td> 19 hours</td>
+                        <td>3 days</td>
+                        <td>3 weeks</td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>Instantly</td>
+                        <td>58 min</td>
+                        <td>1 month</td>
+                        <td>7 months</td>
+                        <td>5 years</td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>2 sec</td>
+                        <td>1 day</td>
+                        <td>5 years</td>
+                        <td>41 years</td>
+                        <td>400 years</td>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td>25 sec</td>
+                        <td>3 weeks</td>
+                        <td>300 years</td>
+                        <td>2,000 years</td>
+                        <td>34,000 years</td>
+                    </tr>
+                    <tr>
+                        <th>15</th>
+                        <td>6 hours</td>
+                        <td>1,000 years</td>
+                        <td>43 million years</td>
+                        <td>600 million years</td>
+                        <td>15 billion years</td>
+                    </tr>
+                    <tr>
+                        <th>18+</th>
+                        <td>9 months</td>
+                        <td>23 million years</td>
+                        <td>6 trillion years</td>
+                        <td>100 trillion years</td>
+                        <td>7 quadrillion years</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer-text">What Hackers Already Know: Capital letters are usually at the start or at the end, women often choose personal names, and men often choose hobbies. Don't be predictable - length and variety are your best defense!</p>
+        </section>
 
     </main>
 </body>

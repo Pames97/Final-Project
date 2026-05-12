@@ -141,6 +141,7 @@ header {
 .card {
     width: 20rem;
     background-color: rgb(252, 249, 249);
+    border: 2px double var(--color-dark);
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -171,38 +172,89 @@ header {
     text-align: center;
     border: 5px solid var(--color-white);
     background-color: var(--color-white);
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #data {
     text-align: center;
     border: 5px solid var(--color-white);
     background-color: var(--color-white);
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #auth {
     text-align: center;
     border: 5px solid var(--color-white);
     background-color: var(--color-white);
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
+
+#passwords {
+    text-align: center;
+    border: 5px solid var(--color-white);
+    background-color: var(--color-white);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#table {
+    text-align: center;
+    border: 5px solid var(--color-white);
+    background-color: var(--color-white);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 
 #cards-section {
     text-align: center;
     border: 5px solid var(--color-white);
     background-color: var(--color-white);
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .footer-text {
      text-align: center;
     border: 5px solid var(--color-white);
     background-color: var(--color-white);
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-ltgreen);
+    color: var(--color-white);
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-ltgreen);
+}
+
+.btn2 {
+    display: inline-block;
+    background-color: var(--color-ltgreen);
+    color: var(--color-white);
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.5s;
+}
+
+.btn2:hover {
+    background-color: var(--color-white);
+    color: var(--color-ltgreen);
 }
