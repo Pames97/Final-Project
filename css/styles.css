@@ -208,6 +208,13 @@ header {
     margin-right: 100px;
 }
 
+#hashing {
+    text-align: center;
+    border: 5px solid var(--color-white);
+    background-color: var(--color-white);
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 #cards-section {
     text-align: center;
