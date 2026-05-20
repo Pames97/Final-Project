@@ -301,10 +301,10 @@
             <p class="footer-text">What Hackers Already Know: Capital letters are usually at the start or at the end, women often choose personal names, and men often choose hobbies. Don't be predictable - length and variety are your best defense!</p>
         </section>
 
-        <section id="hashing">
-            <h5>THE AAA SECURITY MODEL</h5>
-            <h2>Authentication, Access Control &amp; Accounting</h2>
-            <p>The AAA model describes the three tools used in practice to achieve the CIA Triad.</p>
+        <section id="passhashsalt">
+            <h5>PASSWORD STORAGE</h5>
+            <h2>Password Hashing &amp; Salting</h2>
+            <p>Passwords never be stored as plain text. the most common safe storage method is hashing - a one-way mathematical transformation.</p>
         </section>
 
         <section class="passhash" id="passhash">
@@ -361,12 +361,49 @@
             </div>
         </section>
 
-        <section id="aaa">
-            <h5>PASSWORD STORAGE</h5>
+        <section id="cards-section">
+            <div class="container">
+                <div class="cards-grid">
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>What is Hashing?</h3>
+                            <p>ONE-WAY CONVERSION</p>
+                            <p>A mathematical function converts a password into a fixed-length string called a hash. it is one-way - the original password cannot be recovered from the hash alone. Common algorithms: MD5. SHA-256, SHAA-512</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Rainbow Tables</h3>
+                            <p>ATTACK METHOD</p>
+                            <p>A massive percomputed file of hash values for every possible password. Attackers look up a stolen hash to instantly find the matching password - no cracking required.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Salting</h3>
+                            <p>DEFEND METHOD</p>
+                            <p>A unique random string (a salt) is added to each password before hashing. Even identical passwords produce different hashes, completely defeating rainbow table lookups.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Pass-the-Hash</h3>
+                            <p>ADVANCED ATTACK</p>
+                            <p>The attacker steals the hash directly from storage (Windows SAM hive or Linux /etc/shadow) and uses it to authenticate - without ever knowing the original password.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="footer-text"><strong>Where Are Passwords Stored?</strong> On <strong>Windows:</strong> in the SAM registry hive. On <strong>Linux:</strong> in /etc/shadow (root access only). The older /etc/passwd file is world-readable and not safe for passwords.</p>
+
+         <section id="hashing">
+            <h5>THE AAA SECURITY MODEL</h5>
             <h2>Authentication, Access Control &amp; Accounting</h2>
             <p>The AAA model describes the three tools used in practice to achieve the CIA Triad.</p>
         </section>
-
 
         <section id="cards-section">
             <div class="container">
@@ -478,12 +515,22 @@
         </section>
 
         <h3>Top 3 Ways to Stop Password Attacks</h3>
-        <section id="methods">
+        <section id="methods" class="methods">
 
+            <div>
+                <div>
+                    <p>#1 - Use Strong Passwords</p>
+                </div>
+
+                <div>
+                    <p>Long passwords with mixed characters won't be in a dictionary and take too long to crack 12+ characters, all character types.</p>
+                </div>
+            </div>
+            
    
         </section>
 
-        <p class="footer-text"></p>
+        <p class="footer-text">Useful Resources: Check if your credentials have been exsposed at <a href="https://haveibeenpwned.com/">HaveIBeenPwned.com</a>  Learn more about the NIST Cybersecurity Framework at <a href="https://www.nist.gov/cyberframework">nist.gov/cyberframework</a></p>
 
     </main>
 </body>
